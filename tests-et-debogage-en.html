@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+    <link rel="stylesheet" type="text/css" href="/static/custom.css">
+
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4285f4">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#4285f4">
+
+ 
+
+<meta name="author" content="Cédric M" />
+<meta name="description" content="Project summary: A company has created a digital platform to coordinate his events, but there are several, one which crashes the application. The goal is to fix the bugs, execute the phase 2 elements according to the Test Driven Development approach and produce a performance report. Skills worked: Debugging python …" />
+<meta name="keywords" content="python, pytest, flask, locust, TDD">
+
+<link rel="alternate" href="/tests-et-debogage-en.html" hreflang="en" />
+<link rel="alternate" href="/tests-et-debogage.html" hreflang="fr" />
+
+  <meta property="og:site_name" content="Portfolio CM"/>
+  <meta property="og:title" content="Project 7 : Tests and debugging"/>
+  <meta property="og:description" content="Project summary: A company has created a digital platform to coordinate his events, but there are several, one which crashes the application. The goal is to fix the bugs, execute the phase 2 elements according to the Test Driven Development approach and produce a performance report. Skills worked: Debugging python …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/tests-et-debogage-en.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-27 20:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/cedric-m.html">
+  <meta property="article:section" content="Projets étudiant"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="pytest"/>
+  <meta property="article:tag" content="flask"/>
+  <meta property="article:tag" content="locust"/>
+  <meta property="article:tag" content="TDD"/>
+  <meta property="og:image" content="/images/face.jpg">
+
+  <title>Portfolio CM &ndash; Project 7 : Tests and debugging</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="/">
+        <img src="/images/face.jpg" alt="Cédric Morgantini" title="Cédric Morgantini">
+      </a>
+
+      <h1>
+        <a href="/">Cédric Morgantini</a>
+      </h1>
+
+<p>En reconversion professionnelle : <br/> du marketing au développement Python</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/a-propos.html#a-propos">
+                  à propos
+                </a>
+              </li>
+              <li>
+                <a target="_self"
+                   href="/pages/contact.html#contact">
+                  Contact
+                </a>
+              </li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/cedricmorgantini/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/C22660" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="/">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="/tests-et-debogage-en.html">en</a>
+        <a href="/tests-et-debogage.html">fr</a>
+    </div>
+
+    <h1 id="tests-et-debogage">Project 7 : Tests and debugging</h1>
+    <p>
+      Posted on dim. 27 février 2022 in <a href="/category/projets-etudiant.html">Projets étudiant</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Project summary:</h2>
+<p>A company has created a digital platform to coordinate his events, but there are several, one which crashes the application.<br>
+The goal is to fix the bugs, execute the phase 2 elements according to the Test Driven Development approach and produce a performance report.  </p>
+<h2>Skills worked:</h2>
+<ol>
+<li>Debugging python code  </li>
+<li>Implement some python tests:<br>
+Use Pystest<br>
+A script tests structure according to the clickstream.
+A test tree structure according to their category (integration, unit, preformance)
+Performance testing with Locust</li>
+<li>Structure the repository :<br>
+Separate branches for each issue and fonctionnality with, to finish, a quality assurance branche</li>
+</ol>
+<h2>Technologies and tools:</h2>
+<p>Python 3.9 ; Pytest ; Flask ; Locust ; GitHub ; Gitbash ; PyCharm</p>
+<h2>Project's repository:</h2>
+<p><a href="https://github.com/C22660/Python_Testing.git" title="Improve a web python application by tests and debugging"> «Improve a web python application by tests and debugging»</a></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/python.html">python</a>
+      <a href="/tag/pytest.html">pytest</a>
+      <a href="/tag/flask.html">flask</a>
+      <a href="/tag/locust.html">locust</a>
+      <a href="/tag/tdd.html">TDD</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Portfolio CM ",
+  "url" : "",
+  "image": "/images/face.jpg",
+  "description": ""
+}
+</script>
+
+</body>
+</html>

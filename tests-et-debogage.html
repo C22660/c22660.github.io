@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+    <link rel="stylesheet" type="text/css" href="/static/custom.css">
+
+
+
+
+  
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4285f4">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#4285f4">
+
+ 
+
+<meta name="author" content="Cédric M" />
+<meta name="description" content="Pitch du projet : Une entreprise a créé une plateforme numérique pour coordonner ses événements mais il y a plusieurs bogues, dont un qui fait planter l&#39;application. L&#39;objectif est donc de régler les bogues constatés, de mettre en œuvre les éléments d&#39;une phase 2 selon une approche de TDD(Test Driven …" />
+<meta name="keywords" content="python, pytest, flask, locust, TDD">
+
+<link rel="alternate" href="/tests-et-debogage.html" hreflang="fr" />
+<link rel="alternate" href="/tests-et-debogage-en.html" hreflang="en" />
+
+  <meta property="og:site_name" content="Portfolio CM"/>
+  <meta property="og:title" content="Projet 7 : Tests et débogage"/>
+  <meta property="og:description" content="Pitch du projet : Une entreprise a créé une plateforme numérique pour coordonner ses événements mais il y a plusieurs bogues, dont un qui fait planter l&#39;application. L&#39;objectif est donc de régler les bogues constatés, de mettre en œuvre les éléments d&#39;une phase 2 selon une approche de TDD(Test Driven …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/tests-et-debogage.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-27 20:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/cedric-m.html">
+  <meta property="article:section" content="Projets étudiant"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="pytest"/>
+  <meta property="article:tag" content="flask"/>
+  <meta property="article:tag" content="locust"/>
+  <meta property="article:tag" content="TDD"/>
+  <meta property="og:image" content="/images/face.jpg">
+
+  <title>Portfolio CM &ndash; Projet 7 : Tests et débogage</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="/">
+        <img src="/images/face.jpg" alt="Cédric Morgantini" title="Cédric Morgantini">
+      </a>
+
+      <h1>
+        <a href="/">Cédric Morgantini</a>
+      </h1>
+
+<p>En reconversion professionnelle : <br/> du marketing au développement Python</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/a-propos.html#a-propos">
+                  à propos
+                </a>
+              </li>
+              <li>
+                <a target="_self"
+                   href="/pages/contact.html#contact">
+                  Contact
+                </a>
+              </li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/cedricmorgantini/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/C22660" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="/">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="/tests-et-debogage.html">fr</a>
+        <a href="/tests-et-debogage-en.html">en</a>
+    </div>
+
+    <h1 id="tests-et-debogage">Projet 7 : Tests et débogage</h1>
+    <p>
+      Posted on dim. 27 février 2022 in <a href="/category/projets-etudiant.html">Projets étudiant</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Pitch du projet :</h2>
+<p>Une entreprise a créé une plateforme numérique pour coordonner ses événements mais il y a plusieurs bogues, dont un qui fait planter l'application.
+L'objectif est donc de régler les bogues constatés, de mettre en œuvre les éléments d'une phase 2 selon une approche de TDD(Test Driven Development, ou développement piloté par les tests), de préparer un rapport de test et un rapport de performances.</p>
+<h2>Compétences travaillées :</h2>
+<ol>
+<li>Debugger le code d'une application Python  </li>
+<li>Implémenter une suite de tests Python :<br>
+Utilisation de Pystest
+Une organisation des scripts de tests selon le parcours utilisateur.
+Une arborescense qui classe les tests selon leur catégorie (intégration, unitaire, performance)
+Analyser la performance d’une application avec Locust</li>
+<li>Structurer le repository :<br>
+Mise en place de branches séparées pour chaque correctif et chaque fonctionnalité avec, au final, une branche d'assurance qualité</li>
+</ol>
+<h2>Technologies et outils :</h2>
+<p>Python 3.9 ; Pytest ; Flask ; Locust ; GitHub ; Gitbash ; PyCharm</p>
+<h2>Repo du projet :</h2>
+<p><a href="https://github.com/C22660/Python_Testing.git" title="«Améliorez une application Web Python par des tests et du débogage»"> «Améliorez une application Web Python par des tests et du débogage»</a></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/python.html">python</a>
+      <a href="/tag/pytest.html">pytest</a>
+      <a href="/tag/flask.html">flask</a>
+      <a href="/tag/locust.html">locust</a>
+      <a href="/tag/tdd.html">TDD</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Portfolio CM ",
+  "url" : "",
+  "image": "/images/face.jpg",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
